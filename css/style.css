@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CORPO*/
+body{
+    background-color: palegoldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    color: #001900;
+    font-size: 1.3rem;
+    font-weight: 600;
+    bottom: 2em;
+}
+
+/*MENU*/
+.menu{
+    display: inline-flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #283618;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;   
+}
+.menu li{
+    display: inline-block;
+    list-style: none;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: #DDA15E;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600px;
+}
+.menu a:hover{
+    color: #b76e79;
+}
+
+/*TÍTULOS*/
+h1{
+    font-size: 4em;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 1em;
+    color: #BC6C25;
+}
+h2{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    text-align: center;
+    color: #b76e79;
+    margin-top: 1.5em;
+}
+
+/*SOBRE*/
+#Sobre{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: rgb(255, 244, 222);
+}
+#Sobre p{
+    margin: 2.5em;
+}
+
+/*REGRAS*/
+#Regras{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: rgb(255, 244, 222);
+}
+#Regras p{
+    margin: 2.5em;
+}
+#Regras .lista{
+    margin-left: 6em;
+}
+#Regras .obs{
+    margin-left: 1em;
+}
+
+/*CUIDADOS*/
+#Cuidados{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: rgb(255, 244, 222);
+}
+#Cuidados p{
+    margin: 2.5em;
+}
+
+/*ADOTE*/
+#Adote{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: rgb(255, 244, 222);
+}
+#Adote p{
+    margin: 2.5em;
+}
+#Adote a{
+    text-decoration: none;
+    color: #b76e79;
+}
+
+/*DOE*/
+#Doe{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: rgb(255, 244, 222);
+}
+#Doe p{
+    margin: 2.5em;
+}
+#Doe a{
+    text-decoration: none;
+    color: #b76e79;
+}
+
+/*RODAPÉ*/
+#Contatos{
+    background-color: #283618;
+    width: 100%;
+    text-align: center;
+}
+#Contatos h2{
+    padding-top: .2em;
+    padding-bottom: .5em;
+    margin-top: 0em;
+    text-decoration: none;
+    color: #b76e79;
+}
+#Contatos img{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 480px){
+    .menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu li{
+        text-align: center;
+        list-style: none;
+    }
+    .menu a{
+        padding: 0;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    h1{
+        padding: 1em;
+    }
+    h2{
+        font-size: 2em;
+    }
+
+    #Sobre{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #Regras{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #Cuidados{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #Adote{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #Doe{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

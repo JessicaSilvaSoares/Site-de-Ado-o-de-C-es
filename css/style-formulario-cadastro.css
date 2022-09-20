@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*CORPO*/
+body{
+    background-color:palegoldenrod;
+}
+
+/*TÍTULOS*/
+h1{
+    font-size: 4em;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 1em;
+    color: #BC6C25;
+}
+h2{
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    text-align: center;
+    color: #b76e79;
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+
+/*FORMULÁRIO*/
+form{
+    background-color: rgb(255, 244, 222);
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 25em;
+    padding: 1em;
+    border-style: double;
+}
+form div + div{
+    margin-top: 1em;
+}
+label{
+    display: inline-block;
+    width: 9em;
+    text-align: right;
+}
+input{
+    font-size: em;
+    font-family: 'Courier New', Courier, monospace;
+    width: 14em;
+    box-sizing: border-box;
+    border: 1px solid #283618;
+}
+
+.button{
+    font-size: 1em;
+    padding: 1em;
+    padding-left: 9em;
+}
+button{
+    margin-left: .3em;
+}
+
+/*RODAPÉ*/
+#Contatos{
+    position: absolute;
+    bottom: 0;
+    background-color: #283618;
+    width: 100%;
+    text-align: center;
+}
+#Contatos h2{
+    padding-top: .2em;
+    padding-bottom: .5em;
+    margin-top: 0em;
+    text-decoration: none;
+    color: #b76e79;
+}
+#Contatos img{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+.home{
+    display: block;
+    padding: 2em;
+}
+.home a{
+    background-color: rgb(255, 244, 222);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #BC6C25;
+    border-style: double black;
+    border-radius: .5em;
+    padding: .5em;
+    margin-bottom: 2em;
+}
+
+
+/*MEDIA QUERY*/
+@media  screen and (max-width: 480px) {
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    form{
+        margin: 0 auto;
+        margin-bottom: 2em;
+        width: 18em;
+    }
+    label{
+        width: 7em;
+    }
+    input{
+        width: 10em;
+    }
+    #Contatos{
+        position: relative;
+    }
+}
